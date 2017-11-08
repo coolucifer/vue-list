@@ -15,6 +15,7 @@ textarea {
 input {
   display: block;
   width: 100%;
+  padding: 10px;
 }
 
 form.list-group-item {
@@ -33,9 +34,7 @@ form.list-group-item {
 }
 
 #main {
-  width: 80%;
   min-width: 800px;
-  margin: 0 auto;
 }
 
 .wrap {
