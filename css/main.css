@@ -1,5 +1,5 @@
 * {
-  background: rgba(0, 0, 0, .02);
+  font-family: 微软雅黑;
   box-sizing: border-box;
   position: relative;
 }
@@ -8,13 +8,34 @@ input,
 button,
 textarea {
   border: 1px solid rgba(0, 0, 0, .1);
-  border-radius: 3px;
+  /* border-radius: 3px; */
   padding: 5px 10px;
 }
 
 input {
   display: block;
   width: 100%;
+}
+
+form.list-group-item {
+  padding: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.incompleted{
+  margin-bottom: 30px;
+}
+
+.incompleted > :first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#main {
+  width: 80%;
+  min-width: 800px;
+  margin: 0 auto;
 }
 
 .wrap {
@@ -48,9 +69,10 @@ input {
   display: none;
 }
 
-.tasklist .item button{
+.tasklist .item button {
   display: none;
 }
-.tasklist .item:hover button{
+
+.tasklist .item:hover button {
   display: inline-block;
 }
