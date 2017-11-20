@@ -24,7 +24,7 @@
         <!-- <div class="wrap"> -->
         <input id="task-input" v-model="current.title" type="text" autocomplete="off" placeholder="想要做什么?">
         <div v-if="current.id" class="detail">
-          <textarea v-model="current.desc" placeholder="请输入具体内容..." style="width:100%"></textarea>
+          <textarea v-model="current.desc" placeholder="请输入具体内容..." style="width:100%; max-width:100%"></textarea>
           <div style="margin:10px 30px;">
             提醒时间:
             <input v-model="current.alert_at" type="datetime-local">
