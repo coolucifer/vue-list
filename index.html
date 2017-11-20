@@ -67,7 +67,7 @@
 
   <template id="task-tpl">
     <div class="task-item list-group-item">
-      <button class="btn btn-default" type="button" @click="toggle_complete(todo.id)">
+      <button class="btn btn-default" type="button" @click="action('toggle_complete', todo.id)">
         <span class="glyphicon glyphicon-ok"></span>
       </button>
       <span class="title">{{todo.title}}</span>
