@@ -28,11 +28,11 @@ form.list-group-item {
   border-bottom-right-radius: 0;
 }
 
-.incompleted{
+.incompleted {
   margin-bottom: 30px;
 }
 
-.incompleted > :first-child {
+.incompleted> :first-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
