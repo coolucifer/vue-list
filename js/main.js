@@ -123,9 +123,9 @@
         this.list.splice(index, 1);
       },
 
-      next_id: function () {
-        return this.list.length + 1;
-      },
+      // next_id: function () {
+      //   return this.list.length + 1;
+      // },
 
       set_current: function (todo) {
         this.current = copy(todo);
@@ -136,7 +136,7 @@
       },
 
       find_index_by_id: function (id) {
-        return this.list.findIndex(function (item) {
+        return this.list.findIndex(function (item) {  //返回符合要求的项的index
           return item.id == id;
         })
       },
