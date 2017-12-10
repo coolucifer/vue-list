@@ -21,7 +21,7 @@
         Event.$emit(name, params);
       }
     }
-  })
+  });
 
   new Vue({
     el: '#main',
