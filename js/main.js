@@ -15,6 +15,7 @@
     props: ['todo'],
     methods: {
       action: function (name, params) {
+        //子组件向父级传数据
         //https://cn.vuejs.org/v2/api/#vm-on 事件触发
         //this.$emit("自定义事件名",要传送的数据)
         //v-on:自定义事件名="在methods中的函数名"
