@@ -1,7 +1,7 @@
 ;
 (function () {
   'use strict';
-
+  //事件中心
   var Event = new Vue();
 
   var alert_sound = document.getElementById('alert-sound');
@@ -137,7 +137,7 @@
       },
 
       find_index_by_id: function (id) {
-        return this.list.findIndex(function (item) {  //返回符合要求的项的index
+        return this.list.findIndex(function (item) { //返回符合要求的项的index
           return item.id == id;
         })
       },
