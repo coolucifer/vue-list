@@ -49,12 +49,18 @@
           </button>
           {{todo.title}}
           <div class="btn-group" style="float:right;">
+            <button class="btn btn-default" @click="toggle_detail(todo.id)">
+              <span class="glyphicon glyphicon-option-horizontal"></span>
+            </button>
             <button class="btn btn-default" type="button" @click="remove(todo.id)">
               <span class="glyphicon glyphicon-trash"></span>
             </button>
             <button class="btn btn-default" type="button" @click="set_current(todo)">
               <span class="glyphicon glyphicon-pencil"></span>
             </button>
+          </div>
+          <div v-if="todo.show_detail" class="detail">
+            {{todo.desc || '暂无详情'}}
           </div>
         </div>
         <!-- </div> -->
